@@ -63,7 +63,7 @@ function App() {
     }
   };
 
-  const onAddtHandler = (event) => {
+  const onAddHandler = (event) => {
     event.preventDefault();
 
     const id = event.target[0].id;
@@ -109,7 +109,7 @@ function App() {
         <Header showCart={toggleCart} />
         {cartModal && <Cart showCart={toggleCart} />}
       </AuthContext.Provider>
-      <AvailableMeals mealList={DUMMY_MEALS} onAdd={onAddtHandler} />
+      <AvailableMeals mealList={DUMMY_MEALS} onAdd={onAddHandler} />
     </div>
   );
 }
